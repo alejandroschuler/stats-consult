@@ -1,0 +1,12 @@
+project:
+  type: default
+
+website:
+  title: "stats-consult"
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

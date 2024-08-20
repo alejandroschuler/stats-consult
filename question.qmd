@@ -1,0 +1,235 @@
+---
+title: Statistical Consulting
+author: Alejandro Schuler
+output:
+  revealjs::quarto_reveal: default
+  revealjs::quarto_reveal_css: styles.css
+format:
+  revealjs:
+    smaller: true
+    scrollable: false
+    html-math-method: mathjax
+    mermaid-format: png
+error: true
+---
+
+# What is statistical consulting? {data-background-color=black} 
+
+## Consulting
+
+1. Client and consultant help each other to understand and define the **reasearch question**
+2. Consultant helps client to choose and implement an appropriate methodological approach
+    - client and consultant help each other understand what formal **assumptions** are appropriate 
+    - client and consultant help each other how to **interpret** the result
+
+# What is the question? {data-background-color=black} 
+
+## A question {data-background-color=teal}
+- **How would you address this?**
+
+*I'm currently working on a project that is based on pesticide exposures and we believe looking at the mixture of exposures based upon a Bayesian models is the right choice to meet our data without just making blanket assumptions. I've gotten where I understand the math behind both BHM and BKMR well and both can be applied reasonably however I am having trouble finding code I can work with to get started. I've looked through GitHub but most of it just becomes a confusing mess and I don't want to operate under the assumption they are right without being able to understand it myself. Do you have a good source for me to start looking and working from?*
+
+
+## What is the question?
+
+- lots of consults start like this: discussing the details of software or methods
+- misses the point entirely: what is the problem they are actually trying to solve?
+    - *what are common combinations of pesticide exposures?*
+    - *can we predict an we predict asthma from pesticide levels from pesticide levels?*
+    - *what pesticides should we advocate against on health grounds?*
+- these each require different approaches, even if we were to use the same "tool" (BKMR)
+
+***
+
+*biostatisticians continue to teach, and users of biostatistical methods continue to internalise, the idea that regression models provide an all-purpose toolkit that can be implemented more or less agnostically to the actual purpose. A widespread approach is first to “find the best model for the data” and second to develop an appropriate interpretation of the fitted model.*
+
+*These practices reflect what we describe as the **“true model myth”**: the notion that the statistical analyst’s primary task is to identify a model that best describes the variation in an outcome in terms of a list of “independent variables”. Finding the best model is rapidly conflated with the idea that the identified model provides a useful approximation to the actual data generating process – from which empirical conclusions can then be drawn.*
+
+<span style="color:grey">
+*Carlin, John B., and Margarita Moreno-Betancur. "On the uses and abuses of regression models: a call for reform of statistical practice and teaching." arXiv preprint arXiv:2309.06668 (2023).*
+</span>
+
+***
+
+*we examined 57 papers (18-20 per journal), in 36 (63%) of which regression methods were used. Among these papers, 25 (69%, or 44% of all papers) exhibited a type of misuse of regression along the lines that we have identified above (see Supplementary Material for details)... The most commonly observed problem was the fitting of multivariable regression models without full consideration of the precise aims of the study, in a manner that exemplifies the “true model myth”. Specifically, we found 10 instances of multiple regression applied to ill-posed questions along the lines of **“can we identify the [most important] risk factors for [condition Y]?”**. Furthermore, even when a clear research question was identified, we observed frequent misuse of regression, such as inadequately justified “adjustment for covariates” and erroneous interpretation of estimated coefficients.*
+
+## Better: A taxonomy of questions
+
+| **descriptive** | **predictive** | **causal** |
+| - | - | - |
+| what are common combinations of pesticide exposures? | can we predict asthma from pesticide levels? |what pesticides should we advocate against on health grounds? |
+
+. . . 
+
+<span style="color:grey">
+*Leek, Jeffery T., and Roger D. Peng. "What is the question? Mistaking the type of question being considered is the most common error in data analysis." Science 347.6228 (2015): 1314-1315.*
+</span>
+
+<span style="color:grey">
+*Hernán, Miguel A., John Hsu, and Brian Healy. "A second chance to get causal inference right: a classification of data science tasks." Chance 32.1 (2019): 42-49.*
+</span>
+
+## Descriptive
+
+*Description is using data to provide a quantitative summary of certain features of the world. Descriptive tasks include, for example, computing the proportion of individuals with diabetes in a large healthcare database and representing social networks in a community.*
+
+*The analytics employed for description range from elementary calculations (a mean or a proportion) to fancy clustering or sample size calculations*
+
+- often about estimating a low-dimensional estimand $\Psi(P) \in \mathbb R^n$ from data
+- what are common combinations of pesticide exposures?
+
+## Predictive
+
+*Prediction is using data to map some features of the world (the inputs) to other features of the world (the outputs). Prediction often starts with simple tasks (quantifying the association between albumin levels at admission and death within one week among patients in the intensive care unit) and then progresses to more complex ones (using hundreds of variables measured at admission to predict which patients are more likely to die within one week).* 
+
+*The analytics employed for prediction range from elementary calculations (a correlation coefficient or a risk difference) to sophisticated pattern recognition methods and supervised learning algorithms that can be used as classifiers (random forests, neural networks) or predict the joint distribution of multiple variables...*
+
+- estimating an infinite-dimensional estimand $\Psi(P) \in \{f: \mathcal X \to \mathcal Y\}$ from data
+- can we predict asthma from pesticide levels?
+
+## Causal 
+
+*Counterfactual prediction is using data to predict certain features of the world as if the world had been different, as is required in causal inference applications. An example of causal inference is the estimation of the mortality rate that would have been observed if all individuals in a study population had received screening for colorectal cancer vs. if they had not received screening.*
+
+*The analytics employed for causal inference range from elementary calculations in randomized experiments with no loss to follow-up and perfect adherence (the difference in mortality rates between the screened and the unscreened) to complex implementations of g-methods in observational studies with treatment-confounder feedback (the plug-in g-formula).*
+
+- estimating a low-dimensional estimand *of a counterfactual distribution* $\Psi(P^*) \in \mathbb R^n$ from data
+- what pesticides should we advocate against on health grounds?
+
+## Common confusions
+
+|Question|Assumed Question|Actual Question|
+|---|---|---|
+|"I want to predict who will benefit from a program" | predictive | causal |
+|"I want to know how accurate this published risk score is" | predictive | descriptive |
+|"I want to understand associations between my exposure and outcome" | descriptive | causal  |
+
+## A particularly common misunderstanding
+
+**"Predictive models always help decision-making"**
+
+- Model does not understand why or how things happen and variable importance is usually meaningless (without causal assumptions!)
+- People at high risk of death may have many prior hospitalizations, but nobody would suggest that reducing hospital admissions is a good idea
+- When clients have a predictive question try to understand what they want to *do* with that prediction
+
+<span style="color:grey">
+*Lipton, Zachary Chase. "The mythos of model interpretability. CoRR abs/1606.03490 (2016)." arXiv preprint arXiv:1606.03490 2 (2016).*
+</span>
+
+## Exercise {data-background-color=teal}
+
+Intussusception is an acute bowel constriction that occurs infrequently in very young children. It is painful and can be dangerous because it blocks the intestines, so surgeons are called upon to intervene and relieve the blockage. The standard treatment (at the time of the research described here) was to use a “gas enema”, a simple procedure that injects air into the baby’s rectum. The procedure is usually successful, but not always, so the clinical investigators of this study were aiming to understand the extent to which a successful outcome could be predicted using characteristics of the child or their clinical presentation. 
+
+- What kind of question is this?
+- would it be appropriate to fit a regression model using backwards selection and then claim that prediction is possible if all the coefficients for the remaining variables are statistically significant?
+
+## Exercise {data-background-color=teal}
+
+Reserachers have data derived from a cohort study of all children born in 1961 who were attending school in Tasmania in 1968 (aged 7 years), with this paper reporting a cross-sectional analysis of data collected from the parents at the time of recruitment (n = 8585). Questionnaires were used to determine both the primary
+outcome of interest (history of asthma in the child) and the risk factors, including child’s sex,
+other atopic conditions (such as hay fever and eczema), family history of allergic disease and
+parental smoking. The stated aim was to examine the strength of association of these risk factors with childhood asthma.
+
+- What kind of question is this?
+- would it be appropriate to fit a multivariate logistic regression and give the interpretation: *"These atopic conditions[history of various other allergic conditions] were found to be independent risk factors, in that an increased risk of asthma was associated with each factor even though the increased risks associated with all other factors had been taken into consideration by the statistical model"*?
+
+## Exercise {data-background-color=teal}
+
+Young children who acquire a urinary tract infection may also develop an infection of the kidney known as pyelonephritis. Affected kidneys become enlarged during these infections, which makes it difficult to use ultrasonic measurements of kidney size as a reliable baseline for future assessment of growth. The research described here sought to estimate how much affected kidneys were enlarged, compared to normal kidneys.
+
+- What kind of question is this?
+- would it be appropriate to fit a regression model to estimating the difference in means between infected and
+uninfected kidneys at any age, with “adjustment for age” accomplished by including a smooth function of age as a covariate in the model?
+
+## Tips
+
+- understand the decision that someone would make based on this information
+- formalize the source of randomness and establish a target parameter 
+    - understand how the question would be answered in an ideal setting with infinite data and control, etc.
+
+
+## A question {data-background-color=teal}
+
+- **How would you address this?**
+
+*I'm trying to make a predictive model to help me diagnose a disease in an African population. I have a random forest model trained from US data and a model trained from US + European data and I want to compare the two. But the problem is that I only have two data points to compare. I'm thinking of training more models like lasso so I have more data points to compare and I can get results I can do statistics with. What do you think?*
+
+## Do you even need statistics?
+
+- Statistics is only necessary if there is randomness, sampling, or uncertainty
+    - sometimes you have *the whole population*
+- If this person only cared about test-set performance then they are done!
+- Many questions don't require statistics at all and your job is to convince them that you don't need a p-value for every number
+- sometimes just counting is good enough
+
+## Repeated experiments
+
+- often useful to ask: do you care if your answer (point estimate) were different if you repeated the study?
+- "population data frame" is an indispensible teaching tool (contrast to sample data frame)
+
+# What are the assumptions? {data-background-color=black} 
+
+## Abstraction makes problems tractable
+```{dot}
+digraph question {
+    node[shape=box, style=filled];
+
+    A[label="Real-World Problem", color=teal, fontcolor=white];
+    B[label="Mathematically Formalized Problem"];
+    C[label="Mathematical Solution"];
+    D[label="Decision or Action", color=teal, fontcolor=white];
+
+    A -> B [label="simplifying assumptions"];
+    B -> C [label="deduction, proof, inference"];
+    C -> D [label="interpretation, judgement"];
+    A -> D [style=dashed, color=teal];
+}
+```
+
+- results are contingent on assumptions, which are unavoidable
+- interpretation is contingent on judgement
+
+## Common assumptions
+
+- random sampling
+- independence of observations 
+- linearity of conditional means
+- no unobserved confounding
+
+**What else?**
+
+## Different tasks require different assumptions
+
+- Independence is not necessary to get a **point estimate** of a sample mean, but it is to get the (usual) **inference**. 
+- Having an L2-consistent estimate of either the outcome or propensity regressions enough for a consistent TMLE of the statistical ATE, but it is not enough to construct a consistent variance estimator
+- We don't need that $Y = X\beta + A\tau + \epsilon$ exactly for main-terms linear regression to give unbiased ATEs in randomized trials, but we do need it for observational studies
+
+## A joke
+
+A mathematician, an engineer, and a statistician apply for a job...
+
+## A question {data-background-color=teal}
+
+A client has done an experiment where they gave students in one 20-person math classroom access to a new and improved textbook while the 20 students in the other classroom had to use the old book. They compared test scores between the classes after the course using a simple rank-sum test and it does seem like the students with the new textbook did better, but the result is only barely statistically significant. They come to you to see if they could do something better. 
+
+- What are they assuming in their analysis? Could the assumptions be wrong? How would that change the interpretation?
+- What might you suggest to improve precision?
+
+# What's the interpretation? {data-background-color=black} 
+
+## What is a p-value? {data-background-color=teal}
+
+## What is evidence?
+
+- hypothesis testing requires a clearly articulated and relevant null hypothesis
+- effect sizes should be considered more important for decision-making than inference
+    - a tiny but very "statistically significant" effect size is meaningless
+- a p-value of 0.04 is probably weak evidence if you have $n=10000$, but really strong evidence if you have $n=10$
+- think about how the result can actually impact decision-making
+
+## Different interpretations of p-value
+
+| FISHER | NEYMAN |
+| --- | --- |
+| Set up a statistical null hypothesis. Report the exact level of significance (e.g., p = 0.051 or p = 0.049). Do not use a conventional 5% level, and do not talk about accepting or rejecting hypotheses. | Set up two statistical hypotheses, H1 and H2, and decide about α before the experiment based on subjective cost-benefit considerations. If the data falls into the rejection region of H1, accept H2; otherwise accept H1. Note that accepting a hypothesis does not mean that you believe in it, but only that you act as if it were true. Only report what was accepted or rejected.|
+| More useful when there are no formal tradeoffs or meta-structure | More useful when there is a clear cost/benefit tradeoff and a governing body |

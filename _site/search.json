@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "question.html",
+    "href": "question.html",
+    "title": "What is the Question?",
+    "section": "",
+    "text": "How would you address this?\n\nI’m currently working on a project that is based on pesticide exposures and we believe looking at the mixture of exposures based upon a Bayesian models is the right choice to meet our data without just making blanket assumptions. I’ve gotten where I understand the math behind both BHM and BKMR well and both can be applied reasonably however I am having trouble finding code I can work with to get started. I’ve looked through GitHub but most of it just becomes a confusing mess and I don’t want to operate under the assumption they are right without being able to understand it myself. Do you have a good source for me to start looking and working from?"
+  },
+  {
+    "objectID": "question.html#a-slide",
+    "href": "question.html#a-slide",
+    "title": "What is the Question?",
+    "section": "A slide",
+    "text": "A slide\n\nissue commands to R using the Rstudio REPL interface\nload a package into R\nread some tabluar data into R"
+  },
+  {
+    "objectID": "question.html#a-question",
+    "href": "question.html#a-question",
+    "title": "What is the Question?",
+    "section": "A question",
+    "text": "A question\n\nHow would you address this?\n\nI’m currently working on a project that is based on pesticide exposures and we believe looking at the mixture of exposures based upon a Bayesian models is the right choice to meet our data without just making blanket assumptions. I’ve gotten where I understand the math behind both BHM and BKMR well and both can be applied reasonably however I am having trouble finding code I can work with to get started. I’ve looked through GitHub but most of it just becomes a confusing mess and I don’t want to operate under the assumption they are right without being able to understand it myself. Do you have a good source for me to start looking and working from?"
+  },
+  {
+    "objectID": "question.html#a-question-1",
+    "href": "question.html#a-question-1",
+    "title": "What is the Question?",
+    "section": "A question",
+    "text": "A question\n\nHow would you address this?\n\nI’m trying to make a predictive model to help me diagnose a disease in an African population. I have a random forest model trained from US data and a model trained from US + European data and I want to compare the two. But the problem is that I only have two data points to compare. I’m thinking of training more models like lasso so I have more data points to compare and I can get results I can do statistics with. What do you think"
+  },
+  {
+    "objectID": "question.html#what-is-the-question",
+    "href": "question.html#what-is-the-question",
+    "title": "What is the Question?",
+    "section": "What is the question?",
+    "text": "What is the question?\n\nlots of consults start like this: discussing the details of software or methods\nmisses the point entirely: what is the problem they are actually trying to solve?\n\nwhat are common combinations of pesticide exposures?\ncan we predict outcomes from pesticide levels?\nwhat pesticides should we advocate against on health grounds?"
+  },
+  {
+    "objectID": "question.html#types-of-question",
+    "href": "question.html#types-of-question",
+    "title": "What is the Question?",
+    "section": "Types of Question",
+    "text": "Types of Question\n\ndescriptive\npredictive\ncausal"
+  },
+  {
+    "objectID": "question.html#a-question-2",
+    "href": "question.html#a-question-2",
+    "title": "What is the Question?",
+    "section": "A question",
+    "text": "A question\n\nHow would you address this?\n\nI’m trying to make a predictive model to help me diagnose a disease in an African population. I have a random forest model trained from US data and a model trained from US + European data and I want to compare the two. But the problem is that I only have two data points to compare. I’m thinking of training more models like lasso so I have more data points to compare and I can get results I can do statistics with. What do you think"
+  },
+  {
+    "objectID": "question.html#do-you-even-need-statistics",
+    "href": "question.html#do-you-even-need-statistics",
+    "title": "What is the Question?",
+    "section": "Do you even need statistics?",
+    "text": "Do you even need statistics?\n\nStatistics is only necessary if there is randomness, sampling, or uncertainty\nIf this person only cared about test-set performance then they are done!\nMany questions don’t require statistics at all and your job is to convince them that you don’t need a p-value for every number"
+  },
+  {
+    "objectID": "question.html#a-question-background-color-teal",
+    "href": "question.html#a-question-background-color-teal",
+    "title": "What is the Question?",
+    "section": "A question {background-color: teal}",
+    "text": "A question {background-color: teal}\n\nHow would you address this?\n\nI’m currently working on a project that is based on pesticide exposures and we believe looking at the mixture of exposures based upon a Bayesian models is the right choice to meet our data without just making blanket assumptions. I’ve gotten where I understand the math behind both BHM and BKMR well and both can be applied reasonably however I am having trouble finding code I can work with to get started. I’ve looked through GitHub but most of it just becomes a confusing mess and I don’t want to operate under the assumption they are right without being able to understand it myself. Do you have a good source for me to start looking and working from?"
+  },
+  {
+    "objectID": "question.html#a-question-data-background-color-teal",
+    "href": "question.html#a-question-data-background-color-teal",
+    "title": "What is the Question?",
+    "section": "",
+    "text": "How would you address this?\n\nI’m currently working on a project that is based on pesticide exposures and we believe looking at the mixture of exposures based upon a Bayesian models is the right choice to meet our data without just making blanket assumptions. I’ve gotten where I understand the math behind both BHM and BKMR well and both can be applied reasonably however I am having trouble finding code I can work with to get started. I’ve looked through GitHub but most of it just becomes a confusing mess and I don’t want to operate under the assumption they are right without being able to understand it myself. Do you have a good source for me to start looking and working from?"
+  }
+]
