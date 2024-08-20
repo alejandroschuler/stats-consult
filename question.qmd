@@ -9,7 +9,6 @@ format:
     smaller: true
     scrollable: false
     html-math-method: mathjax
-    mermaid-format: png
 error: true
 ---
 
