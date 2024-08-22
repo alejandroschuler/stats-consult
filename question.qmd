@@ -16,7 +16,7 @@ error: true
 
 ## Consulting
 
-1. Client and consultant help each other to understand and define the **reasearch question**
+1. Client and consultant help each other to understand and define the **research question**
 2. Consultant helps client to choose and implement an appropriate methodological approach
     - client and consultant help each other understand what formal **assumptions** are appropriate 
     - client and consultant help each other how to **interpret** the result
