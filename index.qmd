@@ -2,8 +2,6 @@
 title: "Statistical Consulting"
 ---
 
-# Logistics
-
 - PH 298:003, class # 31320
 - Tuesdays, 2-3 pm (plus your 2h/wk consultations)
 - BWW 1206
