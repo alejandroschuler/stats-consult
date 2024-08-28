@@ -214,9 +214,39 @@ A client has done an experiment where they gave students in one 20-person math c
 - What are they assuming in their analysis? Could the assumptions be wrong? How would that change the interpretation?
 - What might you suggest to improve precision?
 
-# What's the interpretation? {data-background-color=black} 
+## A question {data-background-color=teal}
 
-## What is a p-value? {data-background-color=teal}
+*I'm doing a project about testing for COVID-19 with dogs who are trained to detect covid by smell. I want to run an experiment that will compare the sensitivity of the dogs to the sensitivity of a traditional antigen test. How should I determine the sample size?*
+
+- How can you formalize this? What assumptions are you making?
+
+. . . 
+
+::::{.columns}
+:::{.column width="60%"}
+
+- $D_i \in \{0,1\}$: the result of the **d**og test
+- $A_i \in \{0,1\}$: the result of the **a**ntigen test
+- $G_i \in \{0,1\}$: the result of the **g**old standard (eg PCR) test
+$$
+(D,A,G)_i \overset{IID}{\sim} P_{D,A,G}
+$$
+$$
+\psi = P(A=1|G=1) - P(D=1|G=1)
+$$
+- plugin, CLT + delta thm ⟹ asymptotics and power
+
+:::
+:::{.column width="40%"}
+- is each test really given to each person?
+- is there really a gold standard?
+- is sampling really IID?
+- do I really not care about heterogeneity?
+- can I rely on asymptotics for power calculation
+:::
+::::
+
+# What's the interpretation? {data-background-color=black} 
 
 ## What is evidence?
 
@@ -225,6 +255,8 @@ A client has done an experiment where they gave students in one 20-person math c
     - a tiny but very "statistically significant" effect size is meaningless
 - a p-value of 0.04 is probably weak evidence if you have $n=10000$, but really strong evidence if you have $n=10$
 - think about how the result can actually impact decision-making
+
+## What is a p-value? {data-background-color=teal}
 
 ## Different interpretations of p-value
 

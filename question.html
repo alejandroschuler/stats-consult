@@ -655,14 +655,41 @@ Alejandro Schuler
 <li>What are they assuming in their analysis? Could the assumptions be wrong? How would that change the interpretation?</li>
 <li>What might you suggest to improve precision?</li>
 </ul>
+</section>
+<section id="a-question-3" class="slide level2" data-background-color="teal">
+<h2>A question</h2>
+<p><em>I’m doing a project about testing for COVID-19 with dogs who are trained to detect covid by smell. I want to run an experiment that will compare the sensitivity of the dogs to the sensitivity of a traditional antigen test. How should I determine the sample size?</em></p>
+<ul>
+<li>How can you formalize this? What assumptions are you making?</li>
+</ul>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><span class="math inline">\(D_i \in \{0,1\}\)</span>: the result of the <strong>d</strong>og test</li>
+<li><span class="math inline">\(A_i \in \{0,1\}\)</span>: the result of the <strong>a</strong>ntigen test</li>
+<li><span class="math inline">\(G_i \in \{0,1\}\)</span>: the result of the <strong>g</strong>old standard (eg PCR) test <span class="math display">\[
+(D,A,G)_i \overset{IID}{\sim} P_{D,A,G}
+\]</span> <span class="math display">\[
+\psi = P(A=1|G=1) - P(D=1|G=1)
+\]</span></li>
+<li>plugin, CLT + delta thm ⟹ asymptotics and power</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>is each test really given to each person?</li>
+<li>is there really a gold standard?</li>
+<li>is sampling really IID?</li>
+<li>do I really not care about heterogeneity?</li>
+<li>can I rely on asymptotics for power calculation</li>
+</ul>
+</div></div>
+</div>
 </section></section>
 <section>
 <section id="whats-the-interpretation" class="title-slide slide level1 center" data-background-color="black">
 <h1>What’s the interpretation?</h1>
 
-</section>
-<section id="what-is-a-p-value" class="slide level2" data-background-color="teal">
-<h2>What is a p-value?</h2>
 </section>
 <section id="what-is-evidence" class="slide level2">
 <h2>What is evidence?</h2>
@@ -675,6 +702,9 @@ Alejandro Schuler
 <li>a p-value of 0.04 is probably weak evidence if you have <span class="math inline">\(n=10000\)</span>, but really strong evidence if you have <span class="math inline">\(n=10\)</span></li>
 <li>think about how the result can actually impact decision-making</li>
 </ul>
+</section>
+<section id="what-is-a-p-value" class="slide level2" data-background-color="teal">
+<h2>What is a p-value?</h2>
 </section>
 <section id="different-interpretations-of-p-value" class="slide level2">
 <h2>Different interpretations of p-value</h2>

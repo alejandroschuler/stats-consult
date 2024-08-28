@@ -1,0 +1,73 @@
+# Example Consult Dialogue
+
+**Client:** I'm trying to figure out how many people I need to enroll in my study. I'm pre-registering the study, so I need to show a power calculation to demonstrate that I will have enough people to demonstrate the effect I'm looking for. I'm researching the effect of a life coaching intervention that my lab has designed. Participants are randomized to either receive our life coaching or a sham intervention, after which they are asked to write any number of life goals for themselves. We are particularly interested in the number of goals that they write that we classify as "relational," i.e., they pertain to improving their relationships with others.
+
+**Consultant:** Ok, great, I think I can help you with that. The first thing you need to know is how you will analyze the data at the end of your study. Are you just looking to find a difference in the mean number of relational goals between the two treatment groups?
+
+**Client:** Yes, that sounds right, but I also want to control for the total number of goals that someone writes. In a pilot experiment with ~100 participants, we saw that different people write different numbers of total goals, and that if we included the number of total goals in a linear regression the effect of the treatment became more significant.
+
+**Consultant:** Hmmm, that's a good point. But I think that adjusting for the total number of goals like that might mess up your estimate of the treatment effect. It's possible that the intervention also encourages people to write more or fewer goals overall, so the treatment and total number of goals written would be correlated, and you wouldn't be getting just the causal effect of the treatment on the number of relational goals. Since treatment impacts total goals, some part of the coefficient of total goals is actually attributable to the treatment, but that's not being modeled, and you'll miss that. Is the raw number of relational goals absolutely the quantity of interest here?
+
+**Client:** Oh, I see. Well, we're not necessarily interested in the raw number of relational goals per se—we just want to know if people are more "relationally oriented" if given the intervention. The raw number of goals is just a proxy for that. We've thought about looking at the ratio of relational goals to total goals and seeing if that quantity changes with the intervention.
+
+**Consultant:** Ok, I think that's a better outcome to use, and then you avoid having to do a mediation analysis. Let's move forward using that outcome. So you're interested in seeing if an individual-level proportion is different in two populations... since that's an outcome that is fixed between zero and one, a logistic regression comes to mind. Do you know about logistic regressions?
+
+**Client:** Yes, but I thought logistic regression only worked for binary outcomes.
+
+**Consultant:** I've only ever seen it used in that context, but the underlying probability model should be able to handle this case. Let me show you what I mean. Logistic regression assumes that the outcomes are drawn from a binomial distribution, which models the probability of getting heads in flips of a biased coin where the probability of heads in a single flip is $p$. Given a bunch of results of coin flips, we want to find out what $p$ is likely to be. We can assume that the probability in the two groups might be different, so $p_T$ and $p_C$ (the treatment and control probabilities) are what we're trying to estimate. In a logistic regression, we're generally assuming that the outcome of each participant is the result of a single flip ($n = 1$), so you either get heads or tails for each person. In your case, however, we can see each goal that they write as a coin flip and evaluate whether or not that goal is relational as "heads". Now we see that each participant gets a different number of opportunities to flip the coin, but the same model can just as easily account for that.
+
+**Client:** Ok, but how do I get that to work in R?
+
+**Consultant:** Good question. I'm not sure, so let's look it up. I'll google "logistic regression proportional outcome"... and here we go... from Stack Overflow: You can also specify the response as a proportion between 0 and 1, then specify another column as the 'weight' that gives the total number that the proportion is from (so a response of 0.3 and a weight of 10 is the same as 3 'successes' and 7 'failures').
+
+**Client:** Interesting. I think I get why we need the weights. If a person only wrote one or two goals, the fraction of those that is relational could vary a lot due to random chance, so it's not a good estimate of the proportion. If someone wrote many goals, we can be more confident about that fraction being a decent estimate of the proportion, so we want to weight that measurement more.
+
+**Consultant:** That's a good way of looking at it. Now let's get back to the original question. You need to find how many people to enroll in your study so that you have enough statistical power to detect an effect of some size. In terms of the model we've set up, you want to test the difference between $p_T$ and $p_C$ and quantify how likely you think it is that you would see that difference in the data if in reality $p_T = p_C$.
+
+**Client:** That's right. But how can that help me find the number of subjects I need? By the way, if I run the analysis we've been talking about on my pilot data, I see that for the controls the estimate is $p_C = 0.1$ and for the treated group I get $p_T = 0.2$, and the coefficient in the model is significant with a p-value < 0.05.
+
+**Consultant:** Good. Hypothesis testing and power calculations are two sides of the same coin, so it's important to understand what it is you are testing. Consider this picture:
+
+On the x-axis are values of the coefficient of treatment in the model you run. The y-axis shows how likely certain outcomes are under certain conditions. Let's look at the condition $H_0: p_T = p_C$, which corresponds to $p_T = p_C$ in our story (no difference in the treatments). We call this the null hypothesis. If that's the case, then most of the time the coefficient we get out of the model should be 0, but you can imagine that sometimes, by random chance, a larger number of people who are more relational at baseline would be assigned to one treatment, so we would get a nonzero coefficient. Since it's less and less likely that a larger number of such people would randomly all be assigned to the same group, it's less and less likely that the coefficient we get would be big, either positive or negative. The other condition ($H_1: p_T - p_C = \delta$) is the alternate hypothesis that $p_T - p_C = \delta$, which also has a distribution of results by a similar argument. The idea of hypothesis testing is that you draw a vertical line somewhere along the x-axis before you run the experiment (we call it the decision boundary), and then if the coefficient you get comes down on the left side of that boundary, you say it's more likely that the coefficient you got came from the distribution of results under $H_0$, so you can't disprove that $H_0: p_T = p_C$. If it comes down on the right side of the boundary, you say you have strong evidence that $p_T \neq p_C$ because it would be really rare to observe so large a coefficient if $H_0$ were the case.
+
+**Client:** I really like this picture. I've done hypothesis testing for a long time, but I've never understood it like this! But I still don't see how this helps with the number of subjects I need...
+
+**Consultant:** We're getting there! The question is: how do you decide where to put the decision boundary? Most people place it to ensure that only a small percentage (we call it the significance level $\alpha$, which is usually 5%) of the null distribution is to the right of it—that's represented by the solid black area.
+
+**Client:** That means that if the coefficient comes down to the right of the boundary there's only a 5% chance that the null hypothesis is true.
+
+**Consultant:** Almost. What it means is that if the null hypothesis were true, we would only observe a coefficient this big 5% of the time we did this experiment. It's the probability that we reject the null if the null was actually true (a false positive). What's important to note is that there is also a striped shaded area that belongs to the distribution under $H_1$ which is to the left of the decision boundary. That means there's some chance that even if $H_1$ is true we'll claim that we can't disprove the null! That's a false negative, or a missed result! The point of enrolling more people in the trial is to minimize the size of that area and increase the area of the distribution of $H_1$ that's to the right of the decision boundary, which is called the power.
+
+**Client:** How is that possible?
+
+**Consultant:** You can see above that the difference in means of the two histograms is the effect size, which is a fixed quantity that we don't know and can't change, so there's no way to shift the distribution of $H_1$ to the right. In a power calculation, we have to start by assuming an effect size. Since you already did a pilot study, let's stick with the result you got: $p_T = 0.2, p_C = 0.1$. What we can change is how "fat" the two curves are. The way we do that is by enrolling more and more subjects. The more subjects are in the study, the less likely it becomes that a large enough group of them would be more or less relational at baseline and also be all assigned to the same group by random chance. That makes each of the densities taller and narrower, which moves the decision boundary to the left at the same time as it shrinks the area of the distribution that's to the left of it.
+
+**Client:** Oh... that makes sense to me. So the question then is how many subjects do we have to have so that a large enough portion of the density (let's say 90%) is to the right of the decision boundary? But how do we know exactly how the number of subjects affects these curves? How do we even get these curves?
+
+**Consultant:** That's exactly right. In many cases there are theoretical ways to derive what the curves will look like, but often the easiest thing to do is to simulate them using the exact same model that we proposed to analyze the data.
+
+**Client:** You lost me.
+
+**Consultant:** We talked earlier about modeling this problem with a binomial distribution... remember the coin flips? We can generate some number of fake subjects' data in R by sampling from that distribution using `rbinom`.
+
+What we're going to do now is make lots of fake datasets where we'll set $p_T = p_C = 0.1$. We'll then run our logistic regression analysis on each of those and get the value of the coefficient. At the end we'll have a bunch of coefficients, which we can turn into a histogram...
+
+**Client:** Oh! That's the distribution of the coefficient under $H_0$! And then we'll do the same thing, generating fake datasets of size $N$ with $p_T = 0.2$ and $p_C = 0.1$, which will give us the distribution under the alternative hypothesis.
+
+**Consultant:** Exactly. Then you set the cutoff by finding the value of the coefficient for which the top 5% of the estimates from the null scenario are greater than it, and then you find what percentage of the estimates from the alternate scenario are greater than that cutoff and that's your power. To find how many subjects you need, all you need to do is repeat that process with different values for $N$. In each of those simulations, you'll get an estimate for your power, so simply scan the results to find the power you want (90%) and pick the $N$ that resulted in that power.
+
+**Client:** That's great! I think I'll be able to code that in R once I read up about loops. One last detail: how do I handle the fact that each subject had a different number of total goals? How do I simulate how many total goals each fake subject will have?
+
+**Consultant:** Ah... that's a great question... hmm...
+
+**Client:** Should I just pick a random number of total goals ($n$ in the binomial model) for each fake subject?
+
+**Consultant:** I suppose you could do that, but then you would have to choose a distribution to draw those random numbers from, which could be making a strong and untested assumption. Here's another idea: for each fake subject, if they are to be part of the treated group, randomly pick a number of total goals from any of the treated subjects in your pilot data, and vice versa if they are to be a fake control subject. That way you aren't making any assumptions about the data generating process for the number of goals and you're taking into account potential differences in the treatment arms. We call this process bootstrap sampling.
+
+**Client:** I like that.
+
+**Consultant:** Actually, you could even bootstrap the entire power calculation, forgoing the modeling with `rbinom`. You could take two bootstrap samples from the pilot control group as the fake treated and control subjects to get the null distribution. Then take a bootstrap sample from the pilot treated group to be the fake treated subjects and a bootstrap sample from the pilot control subjects to be the fake control subjects in order to get the alternative distribution. Like before, calculate the power and then repeat with different $N$ to see how power changes with the size of your study. A different way to get the null would be to shuffle the outcomes between your two groups in the pilot data and sample from that pool, but I'm not sure at first glance if that's better or worse, or if it will make that much of a difference. It might be worthwhile to try all three approaches (parametric, bootstrap, and bootstrap with permutation) and see if they all generally agree.
+
+**Client:** That's fantastic. I need to take some time to process all of this and code some of it up and see what I get. Thanks so much for your help! I've learned a ton and I think I could use a lot of this for some of my other research as well!
+
+**Consultant:** Happy to be of service!

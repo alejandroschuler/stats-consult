@@ -8,6 +8,7 @@ title: "Statistical Consulting"
 - Tuesdays, 2-3 pm (plus your 2h/wk consultations)
 - BWW 1206
 - 1 unit, P/NP or S/NS
+- Prof. Alejandro Schuler w/ cofacilitator Ben Marafino
 
 # Goals
 
@@ -21,7 +22,7 @@ The course consists of one hour a week of “lecture” and two hours a week of 
 
 ## Lecture
 
-In the first few weeks of the course we will use our joint meeting time for some expository lectures on how to approach statistical consultation. After this our meeting times will be used for guest lectures so you can see how consulting is done in the real world (industry and academia) and for student presentations. You are each expected to give a 30 minute presentation about one of your consultations once (or twice if time allows) during the semester, along with turning in a brief written report. 
+In the first few weeks of the course we will use our joint meeting time for some expository lectures on how to approach statistical consultation. After this our meeting times will be used for guest lectures so you can see how consulting is done in the real world (industry and academia) and for student presentations. You are each expected to give a 20 minute presentation about one of your consultations twice during the semester
 
 | Week | Topic |
 | --- | --- |
@@ -43,11 +44,51 @@ In the first few weeks of the course we will use our joint meeting time for some
 
 ## Consults
 
-During your consulting time(s), you and one other student will sit in a room and take consults from clients. Clients may either schedule in advance or drop-in and it’s up to you how to manage that time. Clients will come with statistical questions related to their projects and it is your job to try and help them make progress by clarifying/formalizing their questions and finding appropriate resources for them. 
+During your two hours of consulting time(s), you and one other student will sit in a room and take consults from clients. Clients may either schedule in advance or drop-in and it’s up to you how to manage that time. Clients will come with statistical questions related to their projects and it is your job to try and help them make progress by clarifying/formalizing their questions and finding appropriate resources for them. Your individual consulting times and locations will be scheduled in the first week of the course using this [link](https://docs.google.com/spreadsheets/d/1EBAuHdpTIGzYyFylqY08Kx4ZucXMAg8lz8Q9be_5qSs/edit?gid=0#gid=0). 
 
-The consults are meant to be open-ended. You are welcome to engage deeply (e.g. up to and including writing some R code or doing a simple proof) but it’s not your responsibility to do someone else’s project, especially if that means you are ignoring other clients. Moreover the service is not meant to be a tutoring service: you should turn away students who want help on their homework. However if you want to engage or continue a collaboration outside of consulting hours that is up to you!
+Clients will be able to schedule an appointment using this [link](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kwMTIzYz7yNNzm7a8EIkopFfkg2Cl1ZC26UwMQF6BrzZdPt2iFWRp3R3kI8sfAWsYOC_taGM6). Note that all appointments are up to an hour and begin on the hour, contrary to what the scheduling link says. For example, folks scheduled at 9:30 should show up at 9 and you can begin helping them immediately. Google calendar does not allow scheduling multiple appointments concurrently, but for most hours we actually have two consultants present. You can view the appointments by [adding the Biostat Consult gCalendar to your own Berkeley gCalendar by clicking this link](https://calendar.google.com/calendar/u/1?cid=Y19iZjI5ZmRjZjFkZWEwNjRhNTc2MTNjNmI0MjRkNWZhNzcwMmRmN2Y4ODUyMzgxZTI3MjBjODhlOThjM2I3MGM4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20). 
 
-Your individual consulting times and locations will be scheduled in the first week of the course and we will do our best to schedule around existing commitments. 
+Before showing up to your consult hours, look at the [appointment schedule](https://calendar.google.com/calendar/u/1?cid=Y19iZjI5ZmRjZjFkZWEwNjRhNTc2MTNjNmI0MjRkNWZhNzcwMmRmN2Y4ODUyMzgxZTI3MjBjODhlOThjM2I3MGM4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20). Briefly review the questions and methods mentioned. During consults, first attend to people with appointments and take walk-ins after. Time management is up to you. If it's not too busy you can work together with your co-consultant.
+
+The consults are meant to be open-ended. You are welcome to engage deeply (e.g. up to and including writing some R code or doing a simple proof) but it’s not your responsibility to do someone else’s project, especially if that means you are ignoring other clients. You are free to do any follow-up work you like with clients but if you have one client that is repeatedly taking up a lot of time during the consult you can take another consult first
+
+The service is not meant to be a tutoring service: you should turn away students who want help on their homework. Also please prioritize questions with statistical content. If the question is purely about coding (data cleaning, visualization) you may refer the client to the D-lab consulting services. However most people who think they just have coding questions actually benefit immensely from consulting about their statistical analyses.
+
+## Guest Lectures
+
+I've invited a few presenters with a lot of consulting experience across different parts of industry and academia to come give their perspectives to the class. Some may have some formal presentation but I will also be asking them the following questions:
+
+- what's your general approach to a consult: how do you elucidate/formalize the research question?
+- methods: how do you match methods to the question? What goes into that decision (e.g. accessibility, ease of use, correctness of approach, time)? How much and what kind of research do you do to find answers?
+- give us an example consult or walk-through of the whole process
+- logistics: how do you find clients, set up consults, and have a structure where people can engage you?
+- new problems: what's the relationship between independent methods work and consulting for a practicing statistician?
+- sustainability : how do statistical consultants get paid and have their work recognized?
+- relationship building: how do you manage mutually-beneficial long-term engagements?
+- lessons: how has your approach to consulting changed over time and why?
+
+You should look up our speakers and come prepared with your own questions as well.
+
+## Student Presentations
+
+The point of the presentations is to reflect on a (some) consult(s) of your choice. You will present twice in the semester and each presentation should be about 20m long with plenty of time for questions and discussion. You can [sign up here](https://docs.google.com/spreadsheets/d/1qf1MwXqOTojfCxPWmM3bJGfXAf9HTHjKZZgyn-ZaN9g/edit?usp=sharing) to pick what days you want to present
+
+Your presentation should whatever is relevant from the following:
+
+- What was the research question? What data did the client have?
+- How did you statistically formalize/refine the question? Any alternatives?
+- What assumptions were required and how did you assess them?
+- What analysis did you suggest and why? What alternatives?
+- Did you have to teach them any concepts? Which? Why? How did you do it?
+- How did you interpret the results or discuss how you would interpret them?
+- How did you make the client comfortable talking to you?
+- Overall, what was hard and what was easy? What did you take away?
+
+## Consultant Dialogue
+
+In addition to your presentations, for **one** of your consults, you must write up a fictionalized, summarized dialogue between yourself and the client. Your dialogue should showcase the themes bulleted above so it may be efficient to use the same consult for the presentation and the dialogue but you don't have to. 
+
+Your diaglogues should be roughly 2-4 pages in length. You can see an [example dialogue](dialogue.html) here They are due by December 13th.
 
 # Grading
 
