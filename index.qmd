@@ -5,7 +5,7 @@ title: "Statistical Consulting"
 - PH 298:003, class # 31320
 - Tuesdays, 2-3 pm (plus your 2h/wk consultations)
 - BWW 1206
-- 1 unit, P/NP or S/NS
+- 1 unit, S/U or P/NP
 - Prof. Alejandro Schuler w/ cofacilitator Ben Marafino
 
 # Goals
@@ -90,5 +90,5 @@ Your diaglogues should be roughly 2-4 pages in length. You can see an [example d
 
 # Grading
 
-Grading for the course is pass / not pass. If your presentation and consult report are done in good faith, you participate in lecture, and you show up for your consulting hours, you will pass. If you have any issues preventing you from attending or participating please let me know as soon as possible.
+Grading for the course is S/U or P/NP. If your presentation and consult report are done in good faith, you participate in lecture, and you show up for your consulting hours, you will pass. If you have any issues preventing you from attending or participating please let me know as soon as possible.
 
