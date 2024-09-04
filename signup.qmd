@@ -29,7 +29,7 @@ Note that **all appointments begin on the hour**. For example, if you schedule f
 
 **Walk-ins** are also welcome, you can check the calendar below to see our availability.
 
-All consults are held in **BWW 5422 Schaeffer**.
+All consults are held in **BWW 5422 Schaeffer**, Virtual consults are also available by appointment **for OOMPH students**: simply add a zoom link when prompted by the signup form.
 
 ```{=html}
 <iframe src="https://calendar.google.com/calendar/embed?src=c_bf29fdcf1dea064a57613c6b424d5fa7702df7f8852381e2720c88e98c3b70c8%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
