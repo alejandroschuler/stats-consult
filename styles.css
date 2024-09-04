@@ -1,6 +1,7 @@
 /* css styles */
 
 #custom-sidebar {
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
     position: fixed;
     top: 100px; /* Adjust this value to control how far down the sidebar appears */
     right: 20px; /* Adjust this value to control the distance from the right side of the screen */
@@ -15,21 +16,17 @@
 
 body {
     margin-right: 160px; /* Adjust this value to add space for the sidebar */
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    font-weight: 700; /* Make headings bold */
 }
 
 #main-content {
     width: calc(100% - 260px); /* Prevent the main content from overlapping the sidebar */
     padding-right: 20px;
-}
-
-.logo-container {
-    text-align: center; /* Center the logo */
-    margin-bottom: 20px; /* Space between the logo and the title */
-}
-
-.logo {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
 }
 
 /* Media query for mobile screens */

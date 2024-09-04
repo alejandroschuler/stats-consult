@@ -1,5 +1,5 @@
 ---
-title: Biostatistics Consulting
+title: "BPH Biostatistics Consulting"
 format: 
     html:
         css: styles.css  # Link to your CSS file here
@@ -9,8 +9,8 @@ format:
 
 ```{=html}
 <div id="custom-sidebar">
-    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kwMTIzYz7yNNzm7a8EIkopFfkg2Cl1ZC26UwMQF6BrzZdPt2iFWRp3R3kI8sfAWsYOC_taGM6" style="background-color: #007BFF; color: white; padding: 15px 30px; font-size: 20px; font-weight: bold; text-decoration: none; border-radius: 5px; display: block; text-align: center;">
-        SCHEDULE A CONSULT
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kwMTIzYz7yNNzm7a8EIkopFfkg2Cl1ZC26UwMQF6BrzZdPt2iFWRp3R3kI8sfAWsYOC_taGM6" style="background-color: #3B7EA1; color: white; padding: 15px 30px; font-size: 20px; font-weight: bold; text-decoration: none; border-radius: 5px; display: block; text-align: center;">
+        schedule a consult
     </a>
 </div>
 ```
