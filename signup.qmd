@@ -1,0 +1,51 @@
+---
+title: Biostatistics Consulting
+format: 
+    html:
+        css: styles.css  # Link to your CSS file here
+        toc: false
+---
+
+
+```{=html}
+<div id="custom-sidebar">
+    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kwMTIzYz7yNNzm7a8EIkopFfkg2Cl1ZC26UwMQF6BrzZdPt2iFWRp3R3kI8sfAWsYOC_taGM6" style="background-color: #007BFF; color: white; padding: 15px 30px; font-size: 20px; font-weight: bold; text-decoration: none; border-radius: 5px; display: block; text-align: center;">
+        SCHEDULE A CONSULT
+    </a>
+</div>
+```
+
+**The Division of Biostatistics offers a free consulting service to Berkeley Public Health Affiliates.** Under the supervision faculty, biostatistics graduate students meet with clients to help with statistical research questions in areas such as:
+
+- Understanding your research question
+- Formalizing and checking assumptions
+- Experimental design and data acquisition
+- Data exploration, analysis, and interpretation
+- Data modeling and model fitting
+- Statistical inference for estimation, testing, and prediction
+- Correctly using statistical software
+
+Note that **all appointments begin on the hour**. For example, if you schedule for 9:30, please show up at 9. Google calendar does not allow scheduling multiple appointments concurrently, but for most hours we actually have two consultants present so if you show up on the hour someone will likely be there to help you sooner.
+
+**Walk-ins** are also welcome, you can check the calendar below to see our availability.
+
+All consults are held in **BWW 5422 Schaeffer**.
+
+```{=html}
+<iframe src="https://calendar.google.com/calendar/embed?src=c_bf29fdcf1dea064a57613c6b424d5fa7702df7f8852381e2720c88e98c3b70c8%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+```
+
+## FAQ
+
+### Who can sign up?
+The service is open to any BPH affiliate doing a research project, including but not limited to: undergraduate majors, MPH, MA, PhD, DrPh students, postdocs, research scientists, and faculty.
+
+### What do I get?
+By signing up for a consultation you will get about 30 minutes of time with a consultant (if there are no other appointments your consultant may continue to help you). The consultants will be MA or PhD students with demonstrated statistical expertise who have enrolled in the Biostatistical Consulting Course. Consultants will be advised by biostatistics faculty. 
+
+Each consultation is a stand-alone engagement and there should be no expectation for consultants to become long-term partners in a research project. You are welcome to schedule multiple consults to discuss additional questions but if you are taking up too much of a consultant's time to the detriment of other clients we reserve the right to postpone or decline your consultation. A consultation should not be seen as an alternative to forming a stable collaboration with or hiring a dedicated biostatistician, but a consult could certainly help you decide if that is required.
+
+### What can I ask?
+Clients are welcome to ask any statistics or statistical programming question related to an ongoing or planned research project. Questions related to homework are not allowed: please go instead to the statistics tutoring service offered by the DREAM office or talk with your TAs. If there is prior approval from the course instructor, questions related to course projects are admissible at the consultant's discretion depending on whether the project involves novel research with new data collection or analysis potentially suitable for publication. 
+
+We prioritize questions with statistical content. If your question is purely about coding (data cleaning, visualization) and there are other consult requests we may refer you to the [D-lab consulting services](https://dlab.berkeley.edu/consulting). However we find that most people who think they just have coding questions actually benefit immensely from consulting about their statistical analyses.
