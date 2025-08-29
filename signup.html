@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -29,10 +29,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="signup_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="signup_files/libs/quarto-html/anchor.min.js"></script>
 <link href="signup_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="signup_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="signup_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="signup_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="signup_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="signup_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="signup_files/libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -75,11 +75,11 @@ ul.task-list li input[type="checkbox"] {
 <li>Experimental design and data acquisition</li>
 <li>Data exploration, analysis, and interpretation</li>
 <li>Data modeling and model fitting</li>
-<li>Statistical inference for estimation, testing, and prediction</li>
+<li>Statistical inference for estimation, testing, and predicstion</li>
 <li>Correctly using statistical software</li>
 </ul>
 <p>Note that <strong>all appointments begin on the hour</strong>. For example, if you schedule for 9:30, please show up at 9. Google calendar does not allow scheduling multiple appointments concurrently, but for most hours we actually have two consultants present so if you show up on the hour someone will likely be there to help you sooner. <strong>Walk-ins</strong> are also welcome, you can check the calendar below to see our availability.</p>
-<p>Consults are held in <strong>BWW 5422 Schaeffer</strong>. Virtual consults are also available by appointment <strong>for OOMPH students</strong>: simply add a zoom link when prompted by the signup form.</p>
+<p>Consults are held in <strong>BWW 5420 Shortell</strong>. Virtual consults are also available by appointment <strong>for OOMPH students</strong>: simply add a zoom link when prompted by the signup form.</p>
 <iframe src="https://calendar.google.com/calendar/embed?src=c_bf29fdcf1dea064a57613c6b424d5fa7702df7f8852381e2720c88e98c3b70c8%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 <section id="faq" class="level2">
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
@@ -183,8 +183,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -295,7 +293,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

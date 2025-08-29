@@ -33,7 +33,7 @@ The course website is [alejandroschuler.github.io/stats-consult](https://alejand
 # First Week To-Dos:
 
 - [Schedule consult hours](https://docs.google.com/spreadsheets/d/1EBAuHdpTIGzYyFylqY08Kx4ZucXMAg8lz8Q9be_5qSs/edit?gid=0#gid=0) (details below)
-    - [Recommended: add the Biostat Consult gCalendar to your own Berkeley gCalendar](https://calendar.google.com/calendar/u/1?cid=Y19iZjI5ZmRjZjFkZWEwNjRhNTc2MTNjNmI0MjRkNWZhNzcwMmRmN2Y4ODUyMzgxZTI3MjBjODhlOThjM2I3MGM4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+    - [Add the Biostat Consult gCalendar to your own Berkeley gCalendar](https://calendar.google.com/calendar/u/1?cid=Y19iZjI5ZmRjZjFkZWEwNjRhNTc2MTNjNmI0MjRkNWZhNzcwMmRmN2Y4ODUyMzgxZTI3MjBjODhlOThjM2I3MGM4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 - [Pick your Presentation Days](https://docs.google.com/spreadsheets/d/1qf1MwXqOTojfCxPWmM3bJGfXAf9HTHjKZZgyn-ZaN9g/edit?usp=sharing)
 
 
@@ -41,26 +41,26 @@ The course website is [alejandroschuler.github.io/stats-consult](https://alejand
 
 The course consists of one hour a week of “lecture” and two hours a week of consulting time (starting on week 2). 
 
-## Lecture
+## Lecture and Readings
 
 In the first few weeks of the course we will use our joint meeting time for some expository lectures on how to approach statistical consultation. After this our meeting times will be used for guest lectures so you can see how consulting is done in the real world (industry and academia) and for student presentations. You are each expected to give a 20 minute presentation about one of your consultations once during the semester (the rest of the class time on that day will be spent discussing the consult you presented).
 
-| Week | Topic |
-| --- | --- |
-| 9/2 | [Statistical Consulting](question.html) |
-| 9/9 | [Consult Walkthrough](https://youtu.be/I6I63ziLHD4) |
-| 9/16 | First Consults: Group Discussion |
-| 9/23 | Guest Lecture: [Arman Sabbaghi](https://www.linkedin.com/in/arman-sabbaghi-51218391/) |
-| 9/30 | Student Presentations |
-| 10/7 | Guest Lecture: [Stacey Alexeeff](https://divisionofresearch.kaiserpermanente.org/researchers/alexeeff-stacey/) |
-| 10/14 | Guest Lecture: [Richard Zink](https://www.linkedin.com/in/richard-c-zink/) |
-| 10/21 | Student Presentations |
-| 10/28 | Student Presentations |
-| 11/4 | Student Presentations |
-| 11/18 | Guest Lecture: [Shira Mitchell](https://shiraamitchell.github.io/) |
-| 11/26 | Student Presentations |
-| 12/3 | Student Presentations |
-| 12/10 | Student Presentations |
+| Week | Topic | Readings |
+| --- | --- | --- |
+| 9/2 | [Statistical Consulting](question.html) | [I wish I had known...](https://github.com/alejandroschuler/stats-consult/blob/main/dialogues/Starter%20Guide%20to%20Academic%20Consulting.pdf) | 
+| 9/9 | [Consult Walkthrough](https://youtu.be/I6I63ziLHD4) | [demo 1](https://github.com/alejandroschuler/stats-consult/blob/main/dialogues/AK_dialogue.pdf), [demo 2](https://github.com/alejandroschuler/stats-consult/blob/main/dialogues/sky_consult_dialogue.pdf) |
+| 9/16 | First Consults: Group Discussion | [GEE Review](https://www.jstor.org/stable/pdf/2669353.pdf?casa_token=zja7DZxO2jcAAAAA:2A2IlZyjwwP_0sv1WUnJSCsO74lM9186UF560rqR-0zHWozjs6egI_qLilkrYdltmslgoGesCnomTY2OSYR3WTn0vA5uh8uWz1jiwM5zucpNTtfwkg), [To GEE or not to GEE?](https://sci-hub.ru/https://pubmed.ncbi.nlm.nih.gov/20220526/)|
+| 9/23 | Guest Lecture: [Arman Sabbaghi](https://www.linkedin.com/in/arman-sabbaghi-51218391/) ||
+| 9/30 | Student Presentations ||
+| 10/7 | Guest Lecture: [Stacey Alexeeff](https://divisionofresearch.kaiserpermanente.org/researchers/alexeeff-stacey/) ||
+| 10/14 | Guest Lecture: [Richard Zink](https://www.linkedin.com/in/richard-c-zink/) ||
+| 10/21 | Student Presentations ||
+| 10/28 | Student Presentations ||
+| 11/4 | Student Presentations ||
+| 11/18 | Guest Lecture: [Shira Mitchell](https://shiraamitchell.github.io/) ||
+| 11/25 | Student Presentations ||
+| 12/2 | Student Presentations ||
+| 12/9 | Student Presentations ||
 
 ## Consults
 
@@ -117,7 +117,7 @@ At the end of the course you must write a "consulting guide": all the advice you
 - make some distinction between between what you think are important and unimportant skills or techniques
 - compare/contrast your attitudes and perspectives on statistical consulting before and after the course
 
-Guides are graded pass/not pass. Any guide that meets those criteria and is turned in by the deadline of **Dec. 13th** will receive a pass grade.
+Guides are graded pass/not pass. Any guide that meets those criteria and is turned in by the deadline of **Dec. 16th** will receive a pass grade.
 
 # Grading and Policies
 
