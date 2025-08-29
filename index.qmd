@@ -1,12 +1,13 @@
 ---
-title: "Statistical Consulting"
+title: "Biostatistics Consulting"
 ---
 
-- PH 298:003, class # 31320
+- PH 246
+- Fall 2025
 - Tuesdays, 2-3 pm (plus your 2h/wk consultations)
 - BWW 1206
-- 1 unit, S/U or P/NP
-- Prof. Alejandro Schuler w/ cofacilitator Ben Marafino
+- 1 unit, S/U
+- Prof. Alejandro Schuler (`alejandro.schuler@berkeley.edu` | [bio](https://ctml.berkeley.edu/people/alejandro-schuler-phd))
 
 # Goals
 
@@ -14,28 +15,49 @@ The goal of this course is to give biostatistics graduate students structured op
 
 Simultaneously, this course aims to provide a free quantitative consulting service accessible to the BPH community, e.g. MPH students working on their capstone projects.
 
-# Structure
+# Prerequisites
 
-The course consists of one hour a week of “lecture” and two hours a week of consulting time (starting after week 2). 
+This course is accessible to anyone with a strong foundation in statistics and is designed to be taken by 2nd-year master's students and 2nd+ year PhD students in biostatistics. However, students in other programs such as epidemiology, computational precision health, or health policy and management are certainly welcome and contribute to the diversity and strength of the course. We specifically require:
+
+- probability theory (STAT 201A or equivalent)
+- statistics (STAT 201B or equivalent)
+- linear models (STAT 230A or equivalent)
+- programming (STAT 234 or equivalent)
+
+Additional courses such as causal inference (PH 252A) or longitudinal data analysis (PH 242C) are very helpful but not required.
+
+# Materials, Texts, and Communication
+
+The course website is [alejandroschuler.github.io/stats-consult](https://alejandroschuler.github.io/stats-consult/). You can find this syllabus there. There are no other required course materials, readings, or texts. All communication will be through email.
+
+# First Week To-Dos:
+
+- [Schedule consult hours](https://docs.google.com/spreadsheets/d/1EBAuHdpTIGzYyFylqY08Kx4ZucXMAg8lz8Q9be_5qSs/edit?gid=0#gid=0) (details below)
+    - [Recommended: add the Biostat Consult gCalendar to your own Berkeley gCalendar](https://calendar.google.com/calendar/u/1?cid=Y19iZjI5ZmRjZjFkZWEwNjRhNTc2MTNjNmI0MjRkNWZhNzcwMmRmN2Y4ODUyMzgxZTI3MjBjODhlOThjM2I3MGM4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
+- [Pick your Presentation Days](https://docs.google.com/spreadsheets/d/1qf1MwXqOTojfCxPWmM3bJGfXAf9HTHjKZZgyn-ZaN9g/edit?usp=sharing)
+
+
+# Format and Requirements
+
+The course consists of one hour a week of “lecture” and two hours a week of consulting time (starting on week 2). 
 
 ## Lecture
 
-In the first few weeks of the course we will use our joint meeting time for some expository lectures on how to approach statistical consultation. After this our meeting times will be used for guest lectures so you can see how consulting is done in the real world (industry and academia) and for student presentations. You are each expected to give a 20 minute presentation about one of your consultations twice during the semester
+In the first few weeks of the course we will use our joint meeting time for some expository lectures on how to approach statistical consultation. After this our meeting times will be used for guest lectures so you can see how consulting is done in the real world (industry and academia) and for student presentations. You are each expected to give a 20 minute presentation about one of your consultations once during the semester (the rest of the class time on that day will be spent discussing the consult you presented).
 
 | Week | Topic |
 | --- | --- |
-| 9/3 | [Statistical Consulting](question.html) |
-| 9/10 | Consult Walkthrough |
-| 9/17 | Guest Lecture: Eric Daza |
-| 9/24 | Guest Lecture: Manisha Desai |
-| 10/1 | Student Presentations |
-| 10/8 | Student Presentations |
-| 10/15 | Guest Lecture: Dave Miller |
-| 10/22 | Student Presentations |
-| 10/29 | Student Presentations |
-| 11/5 | Student Presentations |
-| 11/12 | Student Presentations |
-| 11/19 | Guest Lecture: Susan Gruber |
+| 9/2 | [Statistical Consulting](question.html) |
+| 9/9 | [Consult Walkthrough](https://youtu.be/I6I63ziLHD4) |
+| 9/16 | First Consults: Group Discussion |
+| 9/23 | Guest Lecture: [Arman Sabbaghi](https://www.linkedin.com/in/arman-sabbaghi-51218391/) |
+| 9/30 | Student Presentations |
+| 10/7 | Guest Lecture: [Stacey Alexeeff](https://divisionofresearch.kaiserpermanente.org/researchers/alexeeff-stacey/) |
+| 10/14 | Guest Lecture: [Richard Zink](https://www.linkedin.com/in/richard-c-zink/) |
+| 10/21 | Student Presentations |
+| 10/28 | Student Presentations |
+| 11/4 | Student Presentations |
+| 11/18 | Guest Lecture: [Shira Mitchell](https://shiraamitchell.github.io/) |
 | 11/26 | Student Presentations |
 | 12/3 | Student Presentations |
 | 12/10 | Student Presentations |
@@ -71,24 +93,34 @@ You should look up our speakers and come prepared with your own questions as wel
 
 The point of the presentations is to reflect on a (some) consult(s) of your choice. You will present twice in the semester and each presentation should be about 20m long with plenty of time for questions and discussion. You can [sign up here](https://docs.google.com/spreadsheets/d/1qf1MwXqOTojfCxPWmM3bJGfXAf9HTHjKZZgyn-ZaN9g/edit?usp=sharing) to pick what days you want to present
 
-Your presentation should whatever is relevant from the following:
+Your presentation should address:
 
 - What was the research question? What data did the client have?
 - How did you statistically formalize/refine the question? Any alternatives?
 - What assumptions were required and how did you assess them?
 - What analysis did you suggest and why? What alternatives?
+- What did you have to research or teach yourself?
 - Did you have to teach them any concepts? Which? Why? How did you do it?
 - How did you interpret the results or discuss how you would interpret them?
 - How did you make the client comfortable talking to you?
 - Overall, what was hard and what was easy? What did you take away?
 
-## Consultant Dialogue
+Each of your presentations will be graded pass/fail. A pass is acheived by any substantive commentary on 4+ of the above topics. 
 
-In addition to your presentations, for **one** of your consults, you must write up a fictionalized, summarized dialogue between yourself and the client. Your dialogue should showcase the themes bulleted above so it may be efficient to use the same consult for the presentation and the dialogue but you don't have to. 
+## Final Assessment: Consulting Guide
 
-Your diaglogues should be roughly 2-4 pages in length. You can see an [example dialogue](dialogue.html) here They are due by December 13th.
+At the end of the course you must write a "consulting guide": all the advice you would give to a student running their first consult next semester (i.e. what you wish *you* had known before starting the course). The guide should:
 
-# Grading
+- be roughly 2-4 pages in length 
+- address 4+ of the themes discussed in the student presentations above
+- use at least two concrete examples from your consulting experience to demonstrate your advice
+- make some distinction between between what you think are important and unimportant skills or techniques
+- compare/contrast your attitudes and perspectives on statistical consulting before and after the course
 
-Grading for the course is S/U or P/NP. If your presentation and consult report are done in good faith, you participate in lecture, and you show up for your consulting hours, you will pass. If you have any issues preventing you from attending or participating please let me know as soon as possible.
+Guides are graded pass/not pass. Any guide that meets those criteria and is turned in by the deadline of **Dec. 13th** will receive a pass grade.
 
+# Grading and Policies
+
+Grading for the course is S/U. To pass the course you must get passing grades on all assignments (2 presentations and consulting guide), have an 80%+ attendance record for lecture, and no unexcused absences for your consulting hours (barring emergencies or unforseeable circumstance). If you have any issues preventing you from attending or participating please let me know as soon as possible. Also know that you are welcome to trade or cover each others' consulting hours.
+
+Descriptions of and relevant campus links to SPH school wide course policies on Disability Support Services, Accommodation of Religions Creed, Course Evaluations, Academic Integrity can be found at: https://berkeley.box.com/s/knh3rbk9ikgvmca4ymy93msgj9bkebq5
