@@ -22,7 +22,7 @@ format:
 - Experimental design and data acquisition
 - Data exploration, analysis, and interpretation
 - Data modeling and model fitting
-- Statistical inference for estimation, testing, and predicstion
+- Statistical inference for estimation, testing, and prediction
 - Correctly using statistical software
 
 Note that **all appointments begin on the hour**. For example, if you schedule for 9:30, please show up at 9. Google calendar does not allow scheduling multiple appointments concurrently, but for most hours we actually have two consultants present so if you show up on the hour someone will likely be there to help you sooner. **Walk-ins** are also welcome, you can check the calendar below to see our availability.
@@ -39,7 +39,7 @@ Consults are held in **BWW 5420 Shortell**. Virtual consults are also available 
 The service is open to any BPH affiliate doing a research project, including but not limited to: undergraduate majors, MPH, MA, PhD, DrPh students, postdocs, research scientists, and faculty.
 
 ### What do I get?
-By signing up for a consultation you will get about 30 minutes of time with a consultant (if there are no other appointments your consultant may continue to help you). The consultants will be MA or PhD students with demonstrated statistical expertise who have enrolled in the Biostatistical Consulting Course. Consultants will be advised by biostatistics faculty. 
+By signing up for a consultation you will get an hour with a consultant. The consultants are MA or PhD students with demonstrated statistical expertise who have enrolled in the Biostatistical Consulting Course. Consultants are advised by biostatistics faculty. 
 
 Each consultation is a stand-alone engagement and there should be no expectation for consultants to become long-term partners in a research project. You are welcome to schedule multiple consults to discuss additional questions but if you are taking up too much of a consultant's time to the detriment of other clients we reserve the right to postpone or decline your consultation. A consultation should not be seen as an alternative to forming a stable collaboration with or hiring a dedicated biostatistician, but a consult could certainly help you decide if that is required.
 
