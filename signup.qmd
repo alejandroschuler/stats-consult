@@ -15,7 +15,7 @@ format:
 </div>
 ```
 
-**The Division of Biostatistics offers a free consulting service to Berkeley Public Health Affiliates.** Under the supervision faculty, biostatistics graduate students meet with clients to help with statistical research questions in areas such as:
+**The Division of Biostatistics offers a free consulting service to Berkeley Public Health Affiliates.** Under the supervision of faculty, biostatistics graduate students meet with clients to help with statistical research questions in areas such as:
 
 - Understanding your research question
 - Formalizing and checking assumptions
