@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Sankhepo">
 
-<title>About – Biostatistics Consulting</title>
+<title>What I Wish I Knew – Biostatistics Consulting</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +24,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -67,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -85,13 +86,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">What I Wish I Knew</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Sankhepo </p>
+          </div>
+  </div>
     
   
     
@@ -102,7 +109,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<p>One of the very first lessons I learned in consulting is that the consult knows their study far better than you do. Your role is not to walk in and immediately diagnose or fix their problem. You have to take the time to listen. Ask them to describe their study in their own words. You may not fully understand it the first time, or the second time, or even the third time, and that is completely okay. It takes time to understand, especially when the project is complex and new to you.</p>
+<p>For this reason, it is also okay, and very necessary, to clarify the research question multiple times. A useful strategy I found was to restate the question back to them in your own words and ask whether that matches their intent. Sometimes simply re-explaining what you think their problem is can reveal misunderstandings or even help them sharpen their own thinking. It helps to know that you are on the same page and that you are actually addressing the question they care about.</p>
+<p>Before you dive into discussing any statistical models, it is helpful to translate the research question into its core components. It helps to ask and clarify</p>
+<ul>
+<li>What is the exposure?<br>
+</li>
+<li>What is the outcome?<br>
+</li>
+<li>What are the covariates or potential confounders?<br>
+</li>
+<li>When is the exposure measured relative to the outcome?<br>
+</li>
+<li>What is the unit of analysis?<br>
+</li>
+<li>Is the goal description, association, prediction, or causal inference?</li>
+</ul>
+<p>Another lesson I learned is not to trust variable names at face value because that can be misleading. For example, in my different consulting sessions I came to realize that</p>
+<ul>
+<li>A variable called “score” may be ordinal, bounded, or a composite of multiple components.<br>
+</li>
+<li>A “rate” may not actually have a clear denominator.<br>
+</li>
+<li>An “index” may be cumulative over time, which has important implications for time trends and collinearity.<br>
+</li>
+<li>A “binary” variable may have been thresholded arbitrarily, with little substantive justification.</li>
+</ul>
+<p>Once the research question and variables are clear, then let the data structure guide the method of analysis. Be sure to clarify among other things:</p>
+<ul>
+<li>Is the data cross-sectional or longitudinal?<br>
+</li>
+<li>Are observations correlated?<br>
+</li>
+<li>Are individuals nested within clinics, years, or health systems?<br>
+</li>
+<li>Is the cohort static or dynamic ?</li>
+</ul>
+<p>Once the study, data, and question are understood, then you can start going into the technicalities of the analysis. I think it is important to remember that your job is not to impose a model or to fix their problem hardcore. I found it helpful to guide them toward an informed decision. Try to ask them guiding questions as opposed to giving direct immediate answers. For example, get them to imagine an ideal scenario with unlimited time or resources. What would change in practice if the result were positive versus null?</p>
+<p>Also be open minded. It’s okay to pivot and think of alternative ways and methods when necessary because I came to learn that there isn’t necessarily going to be a right statistically sound answer.</p>
+<p>Also, when you do recommend a method, I think it’s important to always explain the reasoning behind it. I don’t think it helps to just say, “We recommend a GEE” or “We suggest a mixed model.” Instead, maybe try explain:</p>
+<ul>
+<li>Why this method aligns with the data structure<br>
+</li>
+<li>Why other methods are inappropriate or unstable<br>
+</li>
+<li>What assumptions are being made<br>
+</li>
+<li>What tradeoffs are being accepted</li>
+</ul>
+<p>Another thing is that you do not have to feel rushed during consultations. Sometimes the first half hour is spent just trying to clarify what the research question is. It is also okay to pause and think, or to just sit with silence in the room. In the beginning I felt intimidated by the silence and tried to come up with some nonsensical methods and that was not helpful at all. I learned from my colleagues that silence can be used to think through the problem or perhaps even to quickly look something up to help structure your thinking. Then if you are really stumped by their question, it is completely okay to say “I don’t know,” and maybe schedule a follow-up meeting letting them know you will get back to them after you do a little more research. It’s really important that you follow through with the follow up meeting.</p>
+<p>What’s also equally important is how you treat the client. Please do not be condescending. Do not make them feel foolish or unintelligent for asking a question. Remember that you are not superior and you are also learning through the process.</p>
+<p>Before the meeting, it’s important to send an email confirming the appointment time and whether they will be in person or on Zoom. Miscommunication can happen so easily; for example, with my first consultation, they were waiting on zoom while I was waiting in the conference room..</p>
+<p>After the consultation, try to always send a follow-up email summarizing key points, decisions made, and next steps. Include any references or resources discussed.</p>
+<p>Finally, do not feel inferior if they are more advanced than you are or if they bring up methods you have never heard of. Do not panic. A practice I found helpful is to begin the consultation with brief introductions. Introduce yourself, your level of education, and your research interests. And then allow them to do the same. I found that this creates a friendly atmosphere and sets reasonable expectations.</p>
+<p>Above all, keep it in the back of your mind that you are not expected to know everything. Please listen carefully, think, and treat everyone with respect and kindness.</p>
 
 
 

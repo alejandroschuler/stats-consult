@@ -1,0 +1,14 @@
+---
+title: "Student Reflections"
+---
+
+Reflections and advice from student consultants who have completed PH 246 Biostatistics Consulting.
+
+## Reflections
+
+- [Alissa Gordon](reflections/alissa-gordon.qmd) 
+- [Dirk Tolson](reflections/dirk-tolson.qmd) 
+- [Joy Nakato](reflections/joy-nakato.qmd) 
+- [Kaitlyn Lee](reflections/kaitlyn-lee.qmd) 
+- [Nolan Gunter](reflections/nolan-gunter.qmd) 
+- [Sankhepo](reflections/sankhepo.qmd) 

@@ -1,8 +1,16 @@
 project:
-  type: default
+  type: website
 
 website:
-  title: "stats-consult"
+  title: "Biostatistics Consulting"
+  # navbar:
+  #   left:
+  #     - href: index.qmd
+  #       text: Home
+  #     - href: signup.qmd
+  #       text: Sign Up
+  #     - href: reflections.qmd
+  #       text: Student Reflections
 
 
 format:

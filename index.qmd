@@ -47,8 +47,8 @@ In the first few weeks of the course we will use our joint meeting time for some
 
 | Week | Topic | Readings |
 | --- | --- | --- |
-| 1/20 | [Statistical Consulting](question.html) | [I wish I had known...](https://github.com/alejandroschuler/stats-consult/blob/main/dialogues/Starter%20Guide%20to%20Academic%20Consulting.pdf) | 
-| 1/27 | [Consult Walkthrough](https://youtu.be/I6I63ziLHD4) | [demo 1](https://github.com/alejandroschuler/stats-consult/blob/main/dialogues/AK_dialogue.pdf), [demo 2](https://github.com/alejandroschuler/stats-consult/blob/main/dialogues/sky_consult_dialogue.pdf) |
+| 1/20 | [Statistical Consulting](question.html) | [abuses of regression models](https://arxiv.org/pdf/2309.06668), [target trials](https://academic.oup.com/aje/article-abstract/183/8/758/1739860?redirectedFrom=fulltext), [cargo cult stats](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2018.01174.x) | 
+| 1/27 | [Consult Walkthrough](https://youtu.be/I6I63ziLHD4) | [I wish I had known...](./reflections.qmd) | 
 | 2/3 | First Consults: Group Discussion | [GEE Review](https://www.jstor.org/stable/pdf/2669353.pdf?casa_token=zja7DZxO2jcAAAAA:2A2IlZyjwwP_0sv1WUnJSCsO74lM9186UF560rqR-0zHWozjs6egI_qLilkrYdltmslgoGesCnomTY2OSYR3WTn0vA5uh8uWz1jiwM5zucpNTtfwkg), [To GEE or not to GEE?](https://sci-hub.ru/https://pubmed.ncbi.nlm.nih.gov/20220526/)|
 | 2/10 | Guest Interview: [Darren Dahly](https://crf.ucc.ie/team-members/dr-darren-dahly/) ||
 | 2/17 | Guest Interview: [Lauren Liao](https://divisionofresearch.kaiserpermanente.org/researchers/liao-lauren) ||
@@ -69,7 +69,7 @@ During your two hours of consulting time(s), you and one other student (your par
 Clients will come with statistical questions related to their projects and it is your job to try and help them make progress by clarifying/formalizing their questions and finding appropriate resources for them. 
 Your individual consulting times and locations will be scheduled in the first week of the course using this [link](https://docs.google.com/spreadsheets/d/1EBAuHdpTIGzYyFylqY08Kx4ZucXMAg8lz8Q9be_5qSs/edit?gid=0#gid=0). 
 
-Clients will be able to schedule an appointment using this [link](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0kwMTIzYz7yNNzm7a8EIkopFfkg2Cl1ZC26UwMQF6BrzZdPt2iFWRp3R3kI8sfAWsYOC_taGM6). 
+Clients will be able to schedule an appointment via this [website](./signup.html). 
 Clients are able to schedule appointments until 48 hours before your consult time. It is up to you and your partner to check whether or not anyone has booked you during your hours in those two days before your hours. 
 You can view the appointments by [adding the Biostat Consult gCalendar to your own Berkeley gCalendar by clicking this link](https://calendar.google.com/calendar/u/1?cid=Y19iZjI5ZmRjZjFkZWEwNjRhNTc2MTNjNmI0MjRkNWZhNzcwMmRmN2Y4ODUyMzgxZTI3MjBjODhlOThjM2I3MGM4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20). 
 If nobody has booked your time slot, you and your partner are free to stay home - there are no walk-ins allowed.
@@ -123,7 +123,7 @@ At the end of the course you must write a "consulting guide": all the advice you
 - make some distinction between between what you think are important and unimportant skills or techniques
 - compare/contrast your attitudes and perspectives on statistical consulting before and after the course
 
-Guides are graded pass/not pass. Any guide that meets those criteria and is turned in by the deadline of **May 9th** will receive a pass grade.
+Guides are graded pass/not pass. Any guide that meets those criteria and is turned in by the deadline of **May 9th** will receive a pass grade. You can see previous guides [here](./reflections.html) and I encourage you to read them before starting your consults.
 
 # Grading and Policies
 

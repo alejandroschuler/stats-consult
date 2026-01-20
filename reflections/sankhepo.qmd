@@ -1,4 +1,7 @@
-**Reflection / What I Wish I Knew**
+---
+title: "What I Wish I Knew"
+author: "Sankhepo"
+---
 
 One of the very first lessons I learned in consulting is that the consult knows their study far better than you do. Your role is not to walk in and immediately diagnose or fix their problem. You have to take the time to listen. Ask them to describe their study in their own words. You may not fully understand it the first time, or the second time, or even the third time, and that is completely okay. It takes time to understand, especially when the project is complex and new to you.
 

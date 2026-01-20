@@ -1,21 +1,8 @@
 ---
-title: "BiostatisticsReflection"
+title: "Biostatistics Consulting Guide/Reflection"
 author: "Dirk Antony Tolson III"
 date: "2025-12-18"
-output:
-  pdf_document: default
-  html_document: default
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## Dirk Tolson III
-## UC Berkeley
-## PH 246 Biostatistics Consulting
-## Biostatistics Consulting Guide/Reflection
-## December 17th, 2025
 
 
 This past Fall 2025 semester, I had the opportunity to enroll in PH 246 Biostatistics Consulting under the guidance of Dr. Alejandro Schuler. I had Professor Schuler as my academic advisor and I always wanted to get more experience with consulting, specifically technical or somewhat capacity of biostatistics and public health. As I was going through the semester, there was a lot of experiences and reflection as I was understanding more about consulting and the clients needs. I have done a consulting class before back when I  but that was more of working with a client’s project or dataset for a semester and performing various analyses and providing insight on the data for future work. I did like that I was being exposed to different subjects and subfields as that gave me more knowledge on things that I didn’t know originally. Overall, the experience of consulting was great as it pushed me to communicate well and also help understand the clients needs in their situation and hear from their perspective. Of course, there were things that I did not understand or know and I would like to give a perspective on a guide that I feel would be beneficial for other future students who will take this course. 

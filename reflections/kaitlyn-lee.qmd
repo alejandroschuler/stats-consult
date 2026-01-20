@@ -1,3 +1,8 @@
+---
+title: "Starter Guide to Biostatistics Academic Consulting"
+author: "Kaitlyn Lee"
+---
+
 # **Starter Guide to Biostatistics Academic Consulting**
 
 This guide is broken down into two parts. The first part consists of things I wish I knew before my first consulting session. The second part is a list of things that my consulting partner (Sylvia Cheng) and I (Kaitlyn Lee) do that I think helps make our consulting sessions successful. I still have a lot to learn, so this is by no means supposed to be definitive or the right way to think through things - rather just a collection of thoughts I’ve curated after reflecting on the semester. *This was originally written after Fall 2024, the first time I took this course. I, in general, still stand by this document. I have added a few amendments in italics.*
