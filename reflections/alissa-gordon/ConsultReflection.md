@@ -1,0 +1,192 @@
+### Initial Feelings
+
+Coming into the consulting class for the first time, I had many ideas
+about what the consults would look like. Some of these ideas worried me:
+“What if I can’t help anyone?”, “What if I don’t know the method they
+want to use?”, “What if I say something wrong?”. The first piece of
+advice I would give myself is to *stop worrying*. After having gone
+through the class, I realized it’s okay to be scared of the unknown, but
+there’s no point in worrying about it. Everything turned out fine!
+
+Granted, this isn’t to say that consulting is easy. My consults went
+well because I listened to the advice at the start of the semester and
+learned actively from each session. I hope this guide helps others feel
+better prepared going into their first consults.
+
+### Getting to know your client
+
+First things first, get to know your consult client. It’s important they
+feel comfortable. As they relax, they’ll talk more about their project,
+their current ideas, and what they’re struggling with. It’s equally
+important that they’re comfortable enough to ask questions. You can ask
+the client about themselves and share a bit of yourself as well. It’s
+especially helpful if you have some sort of connection; for example, I
+had some clients come in who I’ve taken classes with before. These kinds
+of connections help them view you more as a peer and lowers the stakes
+for them. It’s a similar idea as to how students usually feel more
+comfortable visiting their GSI’s office hours instead of their
+professor’s.
+
+### Getting to know the project
+
+Once you establish this relationship, the next step (arguably the most
+important and difficult) is to get to know the project well. Ask them
+what their research question is, what they hope to accomplish with the
+research, and what their data looks like.
+
+Research questions typically fall into three categories: descriptive,
+predictive, and causal. Students oftentimes also don’t know which type
+of question they are asking. For example, they may say they want
+predictions but actually care about causality. The type of question they
+can ask usually depends heavily on the data. In these cases, drawing a
+DAG can be extremely useful. This can help the students understand if
+they have enough information to ask a causal question. It clarifies the
+assumptions they’re willing to make as well as if there are problematic
+confounders. If a causal question isn’t possible, see if a predictive or
+descriptive question could answer the underlying goal of analysis. If
+not, you can proceed with a causal analysis, but make the limitations
+very explicit (with some possible sensitivity analyses later on in the
+analysis).
+
+A very helpful question (question credits to Alejandro) is ‘What would
+someone *do* with the results from your research?’ This reveals
+underlying intentions: Do they want actionable policy? Better
+predictions? Summary of population characteristics? Another good
+question (again question credits to Alejandro) is ‘If you had infinite
+resources, how would you test your question?’ This can help students
+zoom out of their particular project. It’s easy to get caught up on the
+details of what the data is, what methods they’ve tried, what they think
+they’re supposed to do. At the heart of it, this question helps to
+highlight what they actually care about and what they wish they could
+measure. Once we have a good understanding to the answer of this
+question, we can start zooming back into the study/data constraints.
+
+For me, the consults that were most difficult were the consults where
+students didn’t know the answer to these questions, which can be a major
+roadblock. Ask them what their advisor has told them or what the
+advisor’s goals may be. If the advisor wasn’t clear, encourage the
+student to meet with them again just to discuss the research question.
+Without a clear question and direction, it is hard to perform a
+meaningful analysis.
+
+Keep in mind, however, that it’s very important to remain respectful
+throughout the whole process. Do not make the student feel like it’s
+their fault they don’t understand. This can also be a very frustrating
+process for the student. It’s important we help the student remain
+comfortable; at the end of the day, most consults are, in practice,
+therapy sessions. Stats is hard! It is our job to support, not
+intimidate.
+
+### Moving onto analysis
+
+If you have a clear research question, congratulations! You can safely
+move onto analysis. Even without a fully clear question, you can
+sometimes begin discussing potential approaches, as long as the student
+understands they should first confirm with their advisor before
+proceeding.
+
+Other than the research question itself, the analysis depends heavily on
+the structure of the data. Questions such as ‘Is the sample size
+small?’, ‘How many covariates are there?’, ‘What confounders might there
+be?’, ‘Is missingness an issue?’, ‘Is the data longitudinal?’ can help
+guide the approaches we consider.
+
+Many times, students will come in with a suggestion from their advisors.
+Help them understand how the proposed method works and what assumptions
+it needs. If the suggestion is appropriate, try to stick with it. If
+they are an MPH student, it can be unreasonable to ask them to go
+against their advisor’s wishes. You can mention alternatives, but my
+advice is to mostly focus on the recommenation and let the student
+decide if they want to bring alternatives to their advisor.
+
+In general, I also prefer simpler methods where they make sense. Try to
+get a good understanding of what methods they are already familiar with.
+Many students prefer methods they’ve learned in class like GLM, linear
+mixed effects models, GEE, etc. You can mention more complex methods but
+avoid overwhelming the student. If they seem interested, go ahead and
+explain in more detail. If it seems like they are not interested in it,
+focus on the valid methods they are interested in. Another possibility
+is that they are familiar and interested in advanced methods. In this
+case, it is fine to focus mostly on these.
+
+Whatever method is chosen, it is important not to treat it like a black
+box. Explain the mechanics and the assumptions. If the assumptions may
+be violated, consider a different method or sensitivity analysis.
+
+### After the session
+
+After the session Nolan and I liked to send summary emails. We recapped
+what we discussed and included helpful documents such as class notes,
+methodological papers, online tutorials, and on on. Many repeat clients
+have mentioned that these documents were very helpful. We also made sure
+to be encouraging in the emails!
+
+<figure>
+<img src="exampleemail.png" alt="Example Email to Client." />
+<figcaption aria-hidden="true">Example Email to Client.</figcaption>
+</figure>
+
+### General comments
+
+*Looking Things Up*
+
+Usually, I didn’t know the answer right off the bat. Either I wasn’t
+familiar with a method or it had been a while since I used it. In these
+cases, I would simply use Google or ChatGPT. It’s totally fine to look
+something up, and it’s definitely better than giving the wrong advice.
+ChatGPT in general is super helpful, but remember it can hallucinate.
+Make sure that what its explanations make sense. Ask for the papers it’s
+referencing and skim them. At the end of the day, a good consultant is a
+good Googler/ChatGPTer.
+
+On the note of ChatGPT, your clients will also be using it. Double check
+their work since many assume it is always correct.
+
+*Providing Emotional Support*
+
+As I mentioned earlier, many sessions are essentially therapy. Some
+clients just need validation. In many cases, I had clients come in with
+excellent work already done. Other clients are overwhelmed and lost.
+Simply talking through the project often gives them direction. If the
+only thing you accomplished in a consult is help them feel better and
+provide direction, that’s still a successful consult.
+
+*Don’t be the Stats Police*
+
+Do not be the stats police! Resist the temptation to reject a method
+simply because it’s parametric or “too simple”. Keep in mind that even
+though we (as biostatistics graduate students) focus so much on
+non-parametric methods, parametric methods also have a place in
+research. Simpler methods are fine so long as they make sense and
+assumptions are reasonable. Keep in mind that they are not also
+biostatistics graduate students. Also, if you push too hard for a
+substantially more complex method, they may ignore your advice anyway.
+It is better to deepen their understanding of a method they are open to.
+
+*What if there is no clear research question?*
+
+Sometimes you cannot pin down a research question during your consult
+session. In these cases, encourage them to meet with their advisor. If
+there is time remaining, you can begin exploring potential methods with
+the caveat that the final choice must align with the final research
+question. Beginning the discussion of underlying model assumptions can
+also be useful.
+
+*Time Management*
+
+Sometimes, I would get worried about time management. In some sessions,
+we would spend so much time pinning down the research question that
+little time remained to actually begin talking about analysis. This is
+fine. As I hope I’ve made clear, the number one priority is getting a
+clear question that is assessable with the data. If you do run out of
+time, you can always mention potential methods for them to explore in
+the summary email. They can also schedule another appointment with you
+to explore the next steps.
+
+### Concluding remarks
+
+Overall, I had a great time in this consulting class. I feel like I
+learned a lot, both as a consultant and a statistician. This is a great
+opportunity to practice your communication skills as well as to brush up
+on statistical methods. I am sure you will do great! Good luck and have
+fun!

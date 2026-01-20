@@ -1,0 +1,54 @@
+---
+title: "Statistical Consulting Guide Final"
+subtitle: "Tips to be a good statistical therapist"
+author: "Nolan Gunter"
+output:
+  pdf_document:
+editor_options: 
+  chunk_output_type: console
+---
+
+“So, am I totally screwed?” the client blurted, alarmingly. He had just learned his current analyses were assuming the data were independent, when it was more dependent than a fish is on water. “No, no, you’re not screwed. There are lots of ways we can make this work.” Before I started consulting, I thought the most important skill was having a breadth and depth of knowledge of every algorithm or estimand. After this class, I now believe that statistical consulting is just number therapy. My consulting philosophy is to focus on gaining a deep and relevant understanding of your client and their problem, meet them where they are at, and merge a statistical framework with a therapeutic approach.
+
+\textit{tldr: When consulting, try to put on your metaphorical therapist glasses. Take time to understand the research problem and researcher deeply, in a non-judgemental and empathetic way. Then once you understand them more, provide feedback and information for analyses that they can actually digest and use. Remember the consulting process is reciprocal; enforce boundaries, stay professional, and know that you don't need to provide all the answers.}
+
+\textbf{Tip 1: Always prioritize getting to know the research question and context}
+
+Sometimes you’ll have a client come in and start immediately asking you questions about interpreting a coefficient from a model. I think part of that leap is because they see us as experts. They don’t think we need to know the greater context of the analysis to give advice. However, it’s important to remember to try to slow down the client when necessary (and maybe yourself too), and focus on developing a shared understanding of the research problem. 
+
+To start, before your first consulting appointment, try to develop a sort of intake form or questionnaire you’d imagine filling out for a research questoin. We've all had to tackle independent research projects by now, so think back to how you had to orient yourself to one. What is the minimal information you needed to know to complete that analysis? It might look something like this:
+
+\begin{itemize}
+  \item What is the research question in a sentence or two? Why should people care about this question? 
+  \item What are the outcome and exposure? How are they measured?
+  \item What is all the data you have collected, and what does it look like if you were to draw out a table?
+  \item What type of question is this (descriptive, predictive, or causal)? If your question is causal, how might you draw a DAG?
+  \item What would be the real world implication of your findings?
+\end{itemize}
+
+You don’t need to literally give them an intake form, but you should be trying to go through these questions with them at the start in a natural way of conversation. As a side note, I really recommend \textbf{taking notes in a running Google Doc (or wherever you prefer) about each appointment you have}. In terms of consulting class, this will make callback for presentations much easier. Additionally, you’ll likely have some repeat offenders that come back multiple times. For instance, I had one student schedule a total of four appointments with me throughout the semester. Having notes about their project to refer to gave me a quick refresher I could review before each appointment, so I didn’t need to go through all the context again. This is one place where I think consultants can relate to therapists a lot. They might see tons of clients every week, and ultimately it’s their job to walk them through navigating a mentally healthy life (or in our case, a robust statistical analysis, same thing!). It is not their job to remember every single detail about the client or their problems, but having a deep understanding they can refer back to in their notes greatly enhances the information they will offer.
+
+As an example, we had a client come in with data from an observational study on ocular health. They wanted to know how to do thorough descriptive analyses examining the relationships between multiple potential exposures (nerve metrics) and outcomes (ocular health symptoms). They were also interested in a causal inference question using the observational data. They wanted to rush into potential ways to do a causal analysis, but my consulting partner [Alissa] and I really tried to slow this down. We first asked, what would someone ideally do with your findings? They hesitated, and this led to a discussion of their exposure and outcome more. We found out that nerve metrics in the eye aren’t really intervenable, and are more static measures in the eye. However, ocular health symptoms can be more intervenable through treatments like eye drops, medications, and surgery. It turns out the exposure and outcome of interest might actually have been flipped. If we hadn’t inquired about the context more, the client may have done a causal inference analysis that had no practical meaning. Who cares about an ATE with nerve metrics as the exposure, if they can’t be intervened on?
+
+\textbf{Tip 2: Meet the client where they are at [statistically]}
+
+In addition to getting to know their research problem in depth, it can only help you to get familiar with the client too. Some intake questions you might ask them, directly or indirectly, could be:
+\begin{itemize}
+  \item What degree or year are you in (if a student)?
+  \item What statistics classes or types of analyses have you done before?
+  \item What is your advisor, mentor, or team’s background and experience with statistics?
+\end{itemize}
+
+We have to remember that \textbf{in our program we have our own biases toward analyses that other people aren’t used to}. For instance, when I once helped a neurobiology PhD student, they were looking at an average treatment effect problem with a small sample ($n=70$) observational dataset. When we hear this, our brains probably scream “TMLE with a SuperLearner”. However, it was standard in their department or field to use a bootstrapped two sample t test to estimate the effect. Even though that might sound like a cardinal sin in our world, we have to acknowledge that there will always be many ways to estimate a statistical parameter, however parametric or unstable they might be.
+
+As a result, we have to understand that based on someone’s background, they might not be ready for more complex analyses yet. \textbf{It’s almost always better to meet them where they’re at and ensure they conduct an analysis that is at least as honest as possible}. A two sample t test bootstrap isn’t the optimal choice they could make, but if they’re going to use it, at least we can walk them through how to evaluate assumptions of the test and be clear about taking the results with a grain of salt. If people have a stronger background in statistics, then more advanced methods can be appropriate. A therapist working with a client with agoraphobia (fear of large crowds) wouldn’t throw them into a rave as a first step in exposure therapy (sometimes, this is the equivalent of telling an MPH student to do TMLE). Instead, they would start with something on a smaller, more achievable level. You’re not only navigating what they can interpret, but also what their project team or advisor can interpret. At the same time, you can plant seeds of doubt in less robust analyses that might be the status quo. Therapists do a good job of giving nonjudgmental feedback while not actually giving advice, and we can apply the same idea here. You don’t need to tell them what analysis to choose, but you can kindly explain the flaws of their current plan. A wise person once said, \textbf{“You can lead a client to TMLE, but you can’t make them target.”}
+
+```{r, echo=FALSE}
+knitr::include_graphics("tmle_horse.jpg")
+```
+
+\textbf{Tip 3: Enforce boundaries and professionalism}
+
+Setting boundaries will greatly improve your experience too. One boundary I’ve come across is related to when therapists say, “Never give advice unless you’re asked for it.” I think this idea merges well with consulting, if we reframe it as, “Never offer an analysis plan unless you’re asked for it.” Some might disagree with me, but it is helpful for a number of reasons. First, exploring and creating an analysis plan on their own means they will understand it more. Second, it makes you less liable or responsible as a scapegoat for any pitfalls they might have in their project. Plus, you’re there to provide guidance and expert statistical information, not do all of the work for them. Another boundary I’ve learned to enforce is to never try to learn a new method in front of the client. We had someone come in and ask about using a causal forest to estimate a conditional average treatment effect. I’d never used this method before, and I attempted to read about it and walk them through the interpretation after just skimming an article. This resulted in an unproductive ten minute period, when I could’ve just said, “I’m not familiar with that method, so I’d need more time to read about it and help you interpret it.” Also, admitting you don’t know will help make them more comfortable too. 
+
+Overall, consulting merges a breadth of biostatistical knowledge that our programs trains us for with navigating interpersonal communication. The latter we have less time to focus on in our graduate studies, but that doesn't mean it isn't an important factor. Have fun consulting and enjoy it, because it's such a refreshing collaborative space for us, compared to how we might sit and code alone for most of our work.  
