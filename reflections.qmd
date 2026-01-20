@@ -1,6 +1,5 @@
 ---
 title: "Student Reflections"
-id: reflections
 ---
 
 Reflections and advice from student consultants who have completed PH 246 Biostatistics Consulting.
