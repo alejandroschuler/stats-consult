@@ -4,14 +4,14 @@ project:
 
 website:
   title: "Biostatistics Consulting"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: signup.qmd
-        text: Sign Up
-      - href: reflections.qmd
-        text: Student Reflections
+  # navbar:
+  #   left:
+  #     - href: index.qmd
+  #       text: Home
+  #     - href: signup.qmd
+  #       text: Sign Up
+  #     - href: reflections.qmd
+  #       text: Student Reflections
 
 
 format:
